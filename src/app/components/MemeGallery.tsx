@@ -4,22 +4,22 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 const memes = [
   {
     url: "https://images.unsplash.com/photo-1697564264503-2c9b10a83c5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXBlJTIwZnJvZyUyMG1lbWV8ZW58MXx8fHwxNzY3Nzc2NTgzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    caption: "Pepe the King",
+    caption: "SpyDog on Mission",
   },
   {
     url: "https://images.unsplash.com/photo-1627570120184-7aec90f5613a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcnlwdG9jdXJyZW5jeSUyMGJpdGNvaW58ZW58MXx8fHwxNzY3NjgyOTgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    caption: "Crypto Vibes",
+    caption: "Crypto Intelligence",
   },
   {
     url: "https://images.unsplash.com/photo-1642630438621-c9f19a224c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2dlJTIwbWVtZXxlbnwxfHx8fDE3Njc3NzY1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    caption: "Diamond Hands",
+    caption: "Undercover Agent",
   },
 ];
 
 const extraMemes = [
-  { emoji: "🚀", caption: "To the Moon!" },
-  { emoji: "💎", caption: "HODL Strong" },
-  { emoji: "🔥", caption: "Burning Hot" },
+  { emoji: "🕵️‍♂️", caption: "Stealth Mode" },
+  { emoji: "🐕", caption: "Good Boi Spy" },
+  { emoji: "🔍", caption: "Investigating Gains" },
 ];
 
 export function MemeGallery() {
@@ -33,10 +33,10 @@ export function MemeGallery() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-7xl mb-6 bg-gradient-to-r from-green-400 to-purple-400 bg-clip-text text-transparent">
-            Meme Gallery
+            SpyDog Gallery
           </h2>
           <p className="text-xl text-purple-200">
-            The finest memes in all of crypto 🎨
+            Classified intel from the field 🕵️‍♂️
           </p>
         </motion.div>
 

@@ -2,17 +2,14 @@ import { motion } from "motion/react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from "recharts";
 
 const data = [
-  { name: "Community", value: 50, color: "#22c55e" },
-  { name: "Liquidity Pool", value: 30, color: "#a855f7" },
-  { name: "Marketing", value: 15, color: "#06b6d4" },
-  { name: "Team", value: 5, color: "#eab308" },
+  { name: "Community", value: 100, color: "#22c55e" },
 ];
 
 const stats = [
   { label: "Total Supply", value: "1,000,000,000", emoji: "💰" },
   { label: "Tax", value: "0%", emoji: "🎉" },
-  { label: "Liquidity Locked", value: "100%", emoji: "🔐" },
-  { label: "Contract", value: "Renounced", emoji: "✅" },
+  { label: "Community", value: "100%", emoji: "🤝" },
+  { label: "Liquidity", value: "100% Locked", emoji: "🔒" },
 ];
 
 export function Tokenomics() {
@@ -40,25 +37,55 @@ export function Tokenomics() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <ResponsiveContainer width="100%" height={400}>
-              <PieChart>
-                <Pie
-                  data={data}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  outerRadius={150}
-                  fill="#8884d8"
-                  dataKey="value"
-                  label={({ name, value }) => `${name} ${value}%`}
-                >
-                  {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={entry.color} />
-                  ))}
-                </Pie>
-                <Legend />
-              </PieChart>
-            </ResponsiveContainer>
+            <motion.div
+              animate={{
+                y: [0, -10, 0],
+                rotate: [0, 3, 0, -3, 0],
+              }}
+              transition={{
+                y: {
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+                rotate: {
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
+              className="flex items-center justify-center"
+            >
+              <ResponsiveContainer width="100%" height={400}>
+                <PieChart>
+                  <Pie
+                    data={data}
+                    cx="50%"
+                    cy="50%"
+                    labelLine={false}
+                    outerRadius={120}
+                    fill="#8884d8"
+                    dataKey="value"
+                    label={({ cx, cy, name, value }) => (
+                      <text
+                        x={cx}
+                        y={cy - 140}
+                        textAnchor="middle"
+                        dominantBaseline="middle"
+                        className="fill-green-300 text-2xl font-bold"
+                      >
+                        {`${name} ${value}%`}
+                      </text>
+                    )}
+                  >
+                    {data.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.color} />
+                    ))}
+                  </Pie>
+                  <Legend />
+                </PieChart>
+              </ResponsiveContainer>
+            </motion.div>
           </motion.div>
 
           <motion.div

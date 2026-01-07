@@ -42,7 +42,7 @@ export function Hero() {
           }}
           className="mb-8"
         >
-          <div className="text-9xl mb-4">🐸</div>
+          <div className="text-9xl mb-4">🕵️‍♂️🐕</div>
         </motion.div>
 
         <motion.h1
@@ -52,19 +52,17 @@ export function Hero() {
           className="text-7xl md:text-9xl mb-6 tracking-tight"
         >
           <span className="bg-gradient-to-r from-green-400 via-emerald-300 to-green-500 bg-clip-text text-transparent">
-            $MEME
+            $SPYDOG
           </span>
         </motion.h1>
 
         <motion.p
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="text-2xl md:text-3xl text-green-300 mb-12 max-w-3xl mx-auto"
+          className="text-2xl md:text-3xl text-green-200 mb-12 max-w-3xl mx-auto"
         >
-          The most legendary meme coin in the crypto universe 🚀
-          <br />
-          <span className="text-purple-300">To the moon and beyond!</span>
+          The sneakiest meme coin in the crypto universe 🚀
         </motion.p>
 
         <motion.div
@@ -78,7 +76,7 @@ export function Hero() {
             className="bg-green-500 hover:bg-green-600 text-black text-xl px-8 py-6 rounded-full"
           >
             <TrendingUp className="mr-2" />
-            Buy $MEME
+            Explore $SPYDOG
           </Button>
           <Button
             size="lg"

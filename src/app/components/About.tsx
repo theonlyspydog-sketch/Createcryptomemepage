@@ -4,27 +4,27 @@ import { Zap, Users, Lock, TrendingUp } from "lucide-react";
 const features = [
   {
     icon: Zap,
-    title: "Lightning Fast",
-    description: "Blazing fast transactions on the blockchain",
-    emoji: "⚡",
+    title: "Stealth Mode",
+    description: "Operating under the radar with secret tech",
+    emoji: "🕵️",
   },
   {
     icon: Users,
-    title: "Community Driven",
-    description: "Powered by the strongest community in crypto",
+    title: "Secret Agency",
+    description: "Powered by the most loyal spy community",
     emoji: "🤝",
   },
   {
     icon: Lock,
-    title: "Secure & Safe",
-    description: "Liquidity locked and contract renounced",
+    title: "Top Secret",
+    description: "Liquidity locked in the vault, classified",
     emoji: "🔒",
   },
   {
     icon: TrendingUp,
-    title: "Moon Mission",
-    description: "Designed for maximum gains and memes",
-    emoji: "🌙",
+    title: "Mission: Moon",
+    description: "Covert operation to astronomical gains",
+    emoji: "🎯",
   },
 ];
 
@@ -40,10 +40,10 @@ export function About() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-7xl mb-6 bg-gradient-to-r from-green-400 to-purple-400 bg-clip-text text-transparent">
-            Why $MEME?
+            Why $SPYDOG?
           </h2>
           <p className="text-xl text-purple-200 max-w-2xl mx-auto">
-            The ultimate meme coin combining dank memes with serious gains
+            The ultimate undercover agent combining stealth with serious gains 🕵️‍♂️
           </p>
         </motion.div>
 
